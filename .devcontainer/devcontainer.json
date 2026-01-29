@@ -1,0 +1,21 @@
+{
+  "name": "SQL Movies Odevi",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {}
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "files.autoSave": "afterDelay"
+      },
+      "extensions": [
+        "mtxr.sqltools",
+        "mtxr.sqltools-driver-sqlite",
+        "formulahendry.code-runner"
+      ]
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh"
+}
